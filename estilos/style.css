@@ -1,0 +1,64 @@
+
+/*Declarações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Paleta de Cores*/
+:root{
+    --cor1: #4B7164;
+    --cor2: #448977;
+    --cor3: #C8C7C3;
+}
+
+body{
+    background-color: var(--cor1);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#login{
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.564);
+    transition: width 0.4s height 0.4s;
+    transition-timing-function: ease;
+
+
+    border: 2px solid orange;
+    
+}
+
+#imagem{
+    width: 100%;
+    height: 50%;
+    background: black url(../imagens/pexels-diva-29417134.jpg) no-repeat center center;
+    background-size: cover;
+    display: block;
+
+    border: 2px solid blue; 
+}
+
+#formulario{
+    padding: 10px;
+    display: block;
+
+    border: 2px solid red; 
+}
+
