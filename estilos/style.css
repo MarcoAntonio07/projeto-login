@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500&display=swap');
 
 /*Declarações Globais*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", serif;
 }
 
 /*Paleta de Cores*/
@@ -28,7 +29,7 @@ main{
 
 #login{
     width: 250px;
-    height: 500px;
+    height: 510px;
     background-color: white;
     border-radius: 20px;
     position: absolute;
@@ -37,28 +38,110 @@ main{
     transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.564);
-    transition: width 0.4s height 0.4s;
-    transition-timing-function: ease;
-
-
-    border: 2px solid orange;
-    
 }
 
 #imagem{
     width: 100%;
-    height: 50%;
+    height: 40%;
     background: black url(../imagens/pexels-diva-29417134.jpg) no-repeat center center;
     background-size: cover;
-    display: block;
-
-    border: 2px solid blue; 
+    display: block; 
 }
 
 #formulario{
+    height: 60%;
     padding: 10px;
     display: block;
-
-    border: 2px solid red; 
 }
 
+#formulario > h1{
+    text-align: center;
+    margin-bottom:1px;
+}
+
+#formulario > p{
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+.campo{
+    background-color: #4B7164;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 1.5px;
+}
+
+.campo label{
+    display: none;
+}
+
+.campo span {
+    color: white;
+    font-size: 1.0em;
+    width: 10%;
+    padding: 0px 4px;
+}
+
+.campo > input{
+    background-color: white;
+    width: 90%;
+    height: 95%;
+    border: 0px;
+    border-radius: 5px;
+}
+
+/*Estilizando um Pseudoseletor*/
+.campo > input::placeholder{
+    color: rgba(0, 0, 0, 0.478);
+    padding: 5px;
+    font-style: italic;
+}
+.botao-entrar {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #4B7164;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao-entrar:hover{
+    background-color: #448977;
+    cursor: pointer;
+}
+
+.botao-link{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    background-color: #C8C7C3;
+    border: 1px solid rgba(0, 0, 0, 0.433);
+    border-radius: 5px;
+}
+
+.botao-link:hover{
+    background-color: var(--cor2);
+    color: white;
+}
+
+form > a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+#botao-icone{
+    font-size: 0.9em;
+}
